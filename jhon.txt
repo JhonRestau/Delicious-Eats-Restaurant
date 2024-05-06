@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Eats Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section Styles */
+#about, #food, #drinks, #alcohol, #catering, #contact {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+#about h2, #food h2, #drinks h2, #alcohol h2, #catering h2, #contact h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+#about h2::after, #food h2::after, #drinks h2::after, #alcohol h2::after, #catering h2::after, #contact h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffd700;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about p, #food p, #drinks p, #alcohol p, #catering p, #contact p {
+    color: #666;
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Menu Styles */
+.menu-item {
+    margin-bottom: 30px;
+}
+
+.menu-item h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-item h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ffd700;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item ul li {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item ul li:hover {
+    transform: translateY(-5px);
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Eats Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#alcohol">Alcoholic Drinks</a></li>
+                <li><a href="#catering">Catering</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Delicious Eats! We pride ourselves on serving delicious and flavorful meals made with the freshest ingredients.</p>
+        <p>Our restaurant provides a cozy and welcoming atmosphere, perfect for enjoying a meal with family and friends.</p>
+    </section>
+
+    <section id="food">
+        <h2>Food Menu</h2>
+        <div class="menu-item">
+            <h3>Appetizers</h3>
+            <ul>
+                <li>Garlic Bread - $5</li>
+                <li>Caprese Salad - $8</li>
+                <li>Bruschetta - $7</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>Main Courses</h3>
+            <ul>
+                <li>Spaghetti Bolognese - $12</li>
+                <li>Grilled Salmon - $15</li>
+                <li>Vegetable Stir Fry - $10</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>Desserts</h3>
+            <ul>
+                <li>Tiramisu - $6</li>
+                <li>Chocolate Lava Cake - $7</li>
+                <li>Vanilla Bean Ice Cream - $4</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="drinks">
+        <h2>Drinks Menu</h2>
+        <div class="menu-item">
+            <h3>Non-Alcoholic</h3>
+            <ul>
+                <li>Sparkling Water - $2</li>
+                <li>Fruit Punch - $3</li>
+                <li>Virgin Mojito - $4</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="alcohol">
+        <h2>Alcoholic Drinks Menu</h2>
+        <div class="menu-item">
+            <h3>Beer</h3>
+            <ul>
+                <li>Local Craft Beer - $5</li>
+                <li>Imported Lager - $6</li>
+                <li>Pale Ale - $7</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>Wine</h3>
+            <ul>
+                <li>Red Wine - $8</li>
+                <li>White Wine - $8</li>
+                <li>Rosé - $9</li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <h3>Cocktails</h3>
+            <ul>
+                <li>Mojito - $10</li>
+                <li>Margarita - $10</li>
+                <li>Old Fashioned - $12</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="catering">
+        <h2>Catering</h2>
+        <p>Let us cater your next event with our delicious and customizable menu options. Whether it's a corporate gathering, wedding, or birthday party, we'll ensure that your guests are treated to an unforgettable dining experience.</p>
+        <p>Contact us to discuss your catering needs and preferences, and we'll take care of the rest!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to make a reservation, please contact us:</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: super@deliciouseats.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delicious Eats Restaurant. All rights reserved. Don't think that this is a legit food chain. its not.</p>
+    </footer>
+</body>
+</html>
